@@ -1,10 +1,15 @@
-﻿namespace CalculatorApp
+﻿using System;
+
+class Program
 {
-    internal class Program
+    static void Main()
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello, World!");
-        }
+        Console.Write("輸入第一個數字: ");
+        int a = int.Parse(Console.ReadLine());
+
+        Console.Write("輸入第二個數字: ");
+        int b = int.Parse(Console.ReadLine());
+
+        Console.WriteLine("你輸入的是: " + a + " 和 " + b);
     }
 }
